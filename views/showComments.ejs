@@ -1,0 +1,14 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+    <div class="jumbotron">
+        <h1>Comment Form</h1>
+        <p>Please write comments about a dog friendly place</p>
+      </div>
+      <ol>
+      <% for(i = 0; i<comments.length; i++){  %>
+          <li>
+            <i>
+               <%= comments[i].comment %></\/i> </li>
+      <% } %>
+      </ol>
+  <%- include('bootfooter') -%>
